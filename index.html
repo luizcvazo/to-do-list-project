@@ -9,24 +9,36 @@
 <body>
     <main>
         <header>
-            <h1>Lista de Tarefas Personalizável</h1>
+            <h1>Lista de compras</h1>
         </header>
 
         <section aria-labelledby="input-heading">
-            <h2 id="input-heading">Adicione seus itens abaixo</h2>
+            <h2 id="input-heading">Adicione os itens abaixo</h2>
             <form id="todo-form">
-                <label for="todo-input">Nova tarefa:</label>
-                <input type="text" id="todo-input" placeholder="Ex: Estudar JavaScript" required>
+                <label for="todo-input">Item:</label>
+                <input type="text" id="todo-input" placeholder="Ex: Arroz" required>
+                <label for="todo-input">Valor:</label>
+                <input type="number" id="todo-input" placeholder="Ex: R$ 12,50" required>
+                <label for="todo-input">Quantidade:</label>
+                <input type="number" id="todo-input" placeholder="Ex: 1" required>
                 <button type="submit">Adicionar</button>
             </form>
         </section>
 
-        <!-- Seção de Exibição: Onde a mágica acontece -->
         <section aria-labelledby="list-heading">
-            <h2 id="list-heading">Suas tarefas:</h2>
-            <ul id="todo-list">
-                
-            </ul>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Itens</th>
+                        <th>Valor</th>
+                        <th>Qtd</th>
+                    </tr>
+                </thead>
+
+                <tbody id="algum-id">
+
+                </tbody>
+            </table>
         </section>
     </main>
 
